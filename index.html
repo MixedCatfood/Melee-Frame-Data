@@ -6,13 +6,13 @@
 
   <title>Melee Frame Data</title>
   <link rel="stylesheet" href="style.css">
-
+  <script src="indexscript.js" async></script>
 
   <meta charset="UTF-8" />
 
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <meta name="description" content="" />
+  <meta name="description" content="Website dedicated to SSBM Frame Data!" />
   <style>
     @font-face {
       font-family: Hussar;
@@ -28,16 +28,8 @@
   <div>
     <h1 class="bannerlink">Super Smash Bros. Melee Character Data</h1>
   </div>
-  <div class="cursor">P1</div>
-  <script>
-
-    const cursor = document.querySelector('.cursor');
-
-    document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: "+(e.pageY -5)+"px; left: "+(e.pageX -5)+"px;")
-    })
-
-  </script>
+  <div class="player1Token">P1</div>
+  <div class="playerCursor"><img id="changingCursor" src='cursorhand.png' width="50" height="50"></div>
 
   <div class="character-select-top">
     <div class="triangle"></div>
@@ -76,7 +68,6 @@
     </ul>
 
     <ul class="characters ch3">
-      <li class="spacer"></li>
       <li class="pichu"><a class="characterlink" href="html/Pichu.html"><img id="pichuimage" src="CharacterPortraits/pichu.png">Pichu</a></li>
       <li class="pikachu"><a class="characterlink" href="html/Pikachu.html"><img id="pikaimage" src="CharacterPortraits/pika.png">Pikachu</a></li>
       <li class="puff"><a class="characterlink" href="html/Jigglypuff.html"><img id="puffimage" src="CharacterPortraits/puff.png">Jiggly-Puff</a></li>

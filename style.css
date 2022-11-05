@@ -29,11 +29,16 @@ body {
     cursor: none;
 }
 
+*:has(a:hover) .cursor {
+    background-color: rgb(75, 9, 9);
+}
+
+
 .characterlink {
     color: #7c8184;
     text-decoration: none;
 }
-.cursor {
+.player1Token {
     width: 28px;
     height: 28px;
     border: 5px solid red;
@@ -44,6 +49,16 @@ body {
     font-size:larger;
     text-align: center;
     background-color: rgb(206, 45, 45); 
+    pointer-events: none;
+    
+}
+.playerCursor {
+    width: 28px;
+    height: 28px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
     pointer-events: none;
 }
 .bannerlink {
@@ -166,8 +181,6 @@ li {
 .all-characters {
     width: 100%;
     margin: auto;
-    padding: auto;
-    position: center;
     bottom: 25px;
 }
 
@@ -183,9 +196,3 @@ li {
 .ch3 {
     bottom: 33px;
 }
-
-.spacer {
-    border-color: transparent;
-    background-color: transparent;
-}
-
